@@ -13,7 +13,7 @@ public class GoogleFooterLinkTests{
 
 	public GoogleFooterLinkTests() {
 		driver = SetDriver.webDriver;
-//		System.out.println("This is the constructor....");
+	System.out.println("This is the Nazrul constructor...");
 	}
 
 

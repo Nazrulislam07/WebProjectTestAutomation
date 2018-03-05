@@ -5,11 +5,11 @@ I want to learn about the legal policies and terms of service of Google and Gmai
 
 
 Background:
-    Given I launch the Google home page url
+    Given I launch the Google home page url 
 #    And I scroll down to the end of the page
 
 Scenario: Privacy Link test
-	When I click on the Privacy link
+	When I click on the Privacy link URL
 	Then I see the Privacy page
  
 Scenario: Terms Link test
