@@ -52,7 +52,7 @@ public class GoogleFooterLinkTests{
 	@Then("^I verified the selected Google page by the existence of the \"(.*?)\" text$")
 	public void i_verified_the_selected_Google_page_by_the_existence_of_the_text(String linkedPage_text) throws Throwable {
 		Assert.assertEquals(true, driver.getPageSource().contains(linkedPage_text));
-		Thread.sleep(2000);   // temporary wait
+		Thread.sleep(5000);   // temporary wait
 	}
 
 }
