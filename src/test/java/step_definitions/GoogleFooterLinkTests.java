@@ -7,11 +7,11 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import helper_classes.SetDriver;
 
-public class GoogleFooterLinksTest{
+public class GoogleFooterLinkTests{
 
 	private static WebDriver driver;
 
-	public GoogleFooterLinksTest() {
+	public GoogleFooterLinkTests() {
 		driver = SetDriver.webDriver;
 //		System.out.println("This is the constructor....");
 	}
