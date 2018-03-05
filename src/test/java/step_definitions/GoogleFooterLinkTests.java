@@ -13,14 +13,16 @@ public class GoogleFooterLinkTests{
 
 	public GoogleFooterLinkTests() {
 		driver = SetDriver.webDriver;
-//		System.out.println("This is the constructor....");
+		System.out.println("This is the constructor1....");
+		System.out.println("This is the constructor2....");
 	}
 
 
 	@When("^I click on the Privacy link$")
 	public void i_click_on_the_Privacy_link() throws Throwable {
 		driver.findElement(By.linkText("Privacy")).click();
-		Thread.sleep(2000);   // temporary wait
+		Thread.sleep(2000); // temporary wait
+		Thread.sleep(4000);
 	}
 
 	@Then("^I see the Privacy page$")
