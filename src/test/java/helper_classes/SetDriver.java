@@ -18,7 +18,7 @@ public class SetDriver {
 	
 	@Before
 	public void getBrowser(Scenario scenario) throws Exception {
-		System.out.println("Before Test....");
+		System.out.println("before test....");
 		
 /*		browser = GlobalSettings.getInstance().getProperty("BROWSER");
 		System.out.println("Selected browser is: " + browser);
