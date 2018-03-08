@@ -13,7 +13,7 @@ Scenario Outline: Selecting different github_usernames and checking a specific r
     Then I verify the existance of the "<expected_repository>" in the github account 
 
     Examples:
-      	|github_usernames|expected_repository|
+    |github_usernames|expected_repository|
 		|icterguru|WebAutomation1001|
 		|icterguru|WebAutomation1004|
 		|icterguru|WebAutomation1005|
