@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "featureFile">Feature File: features&#x2F;GoogleFooterLinkTests.feature</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "feature">Feature: Google Footer links Checkup</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I launch the Google home page url (passed : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: Privacy Link test</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I click on the Privacy link (passed : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  I see the Privacy page (passed : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I launch the Google home page url (passed : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: Terms Link test</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I click on the Terms link (passed : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  I see the Terms page (passed : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenarioOutline">Scenario Outline: Selecting different footer links and checking the corresponding page</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I select &quot;&lt;footerLink_text&gt;&quot; link in the Google footer (passed : 3s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario Outline: Selecting different footer links and checking the corresponding page</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  I verified the selected Google page by the existence of the &quot;&lt;linkedPage_text&gt;&quot; text (passed : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I launch the Google home page url (passed : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  I select &quot;Privacy&quot; link in the Google footer (passed : 3s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario Outline: Selecting different footer links and checking the corresponding page</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  I verified the selected Google page by the existence of the &quot;Welcome to the Google Privacy Policy&quot; text (passed : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I launch the Google home page url (passed : 2s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2018-03-05T15:35:36Z" name="Default suite" finished-at="2018-03-05T15:36:27Z" duration-ms="50742">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:runner_classes.TestCukesRunner@548e6d58]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2018-03-05T15:35:36Z" name="Default test" finished-at="2018-03-05T15:36:27Z" duration-ms="50742">
+      <class name="runner_classes.TestCukesRunner">
+        <test-method is-config="true" signature="initializeSuite(org.testng.ITestContext)[pri:0, instance:runner_classes.TestCukesRunner@548e6d58]" started-at="2018-03-05T10:35:36Z" name="initializeSuite" finished-at="2018-03-05T10:35:36Z" duration-ms="20" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5fcfde70]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSuite -->
+        <test-method signature="run_cukes()[pri:0, instance:runner_classes.TestCukesRunner@548e6d58]" started-at="2018-03-05T10:35:36Z" name="run_cukes" description="Runs Cucumber Features" finished-at="2018-03-05T10:36:27Z" duration-ms="50725" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[<div "featureFile">Feature File: features&#x2F;GoogleFooterLinkTests.feature</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "feature">Feature: Google Footer links Checkup</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I launch the Google home page url (passed : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: Privacy Link test</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I click on the Privacy link (passed : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  I see the Privacy page (passed : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I launch the Google home page url (passed : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: Terms Link test</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I click on the Terms link (passed : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  I see the Terms page (passed : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenarioOutline">Scenario Outline: Selecting different footer links and checking the corresponding page</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I select &quot;&lt;footerLink_text&gt;&quot; link in the Google footer (passed : 3s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario Outline: Selecting different footer links and checking the corresponding page</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  I verified the selected Google page by the existence of the &quot;&lt;linkedPage_text&gt;&quot; text (passed : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I launch the Google home page url (passed : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  I select &quot;Privacy&quot; link in the Google footer (passed : 3s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario Outline: Selecting different footer links and checking the corresponding page</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  I verified the selected Google page by the existence of the &quot;Welcome to the Google Privacy Policy&quot; text (passed : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I launch the Google home page url (passed : 2s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run_cukes -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:runner_classes.TestCukesRunner@548e6d58]" started-at="2018-03-05T10:36:27Z" name="afterSuite" finished-at="2018-03-05T10:36:27Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- runner_classes.TestCukesRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

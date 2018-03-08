@@ -20,12 +20,12 @@ public final class GlobalSettings {
 		String hostIPAddress;	
 		property = new Properties();
 		try {
-			/*
+			
 			localHost = InetAddress.getLocalHost();			 
 			hostIPAddress = localHost.getHostAddress();
 			System.out.println("Host IP Address: " + hostIPAddress);
 			
-		 */			
+		 			
 			currentDirectory = System.getProperty("user.dir");
 			System.out.println("Project location: " + currentDirectory);
 			

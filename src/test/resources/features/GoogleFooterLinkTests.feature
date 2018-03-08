@@ -22,7 +22,7 @@ Scenario Outline: Selecting different footer links and checking the correspondin
     Then I verified the selected Google page by the existence of the "<linkedPage_text>" text
 
     Examples:
-      	|footerLink_text|linkedPage_text|
+    |footerLink_text|linkedPage_text|
 		|Privacy|Welcome to the Google Privacy Policy|
 		|Terms|Google Terms of Service|
 
