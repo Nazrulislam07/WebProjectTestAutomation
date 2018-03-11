@@ -28,7 +28,7 @@ Scenario Outline: Selecting different footer links and checking the correspondin
 
 		|Privacy|Welcome to the Google Privacy Policy|
 	  |Terms|Google Terms of Service|
-
+    |settings|settings|
 		
 #Feature: Google Footer Link Test
 #As a Google tester I want to test Google Footer Links
