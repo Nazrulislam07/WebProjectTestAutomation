@@ -18,7 +18,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 		features = "classpath:features/",
 		glue={"helper_classes", "runner_classes", "step_definitions"},  // These must be glued
-		tags = {"~@wip", "@GoogleFooterLinks"},
+		tags = {"~@wip", "@regression"},
 		monochrome = true,
 		plugin = {"pretty", "html:target/cucumber-html_report", "junit:target/cucumber-junit-results.xml"}
 

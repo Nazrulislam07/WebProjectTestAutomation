@@ -3,11 +3,10 @@ Feature: Google Footer links Checkup
 As a Google Lover,
 I want to learn about the legal policies and terms of service of Google and Gmail.
 
-
 Background:
-    Given I launch the Google home page url
-#    And I scroll down to the end of the page
-
+    Given I launch the Google home page
+    And I scroll down to the end of the page
+@wip
 Scenario: Privacy Link test
 	When I click on the Privacy link
 	Then I see the Privacy page
@@ -26,6 +25,7 @@ Scenario Outline: Selecting different footer links and checking the correspondin
 		|Privacy|Welcome to the Google Privacy Policy|
 		|Terms|Google Terms of Service|
 
+<<<<<<< HEAD
 		|Privacy|Welcome to the Google Privacy Policy|
 	  |Terms|Google Terms of Service|
     |settings|settings|
@@ -96,3 +96,8 @@ Scenario Outline: Selecting different footer links and checking the correspondin
       #| name1 |     5 | success |
       #| name2 |     7 | Fail    |
       
+=======
+#		|Privacy|Welcome to the Google Privacy Policy|
+#		|Terms|Google Terms of Service|
+
+>>>>>>> d6b9746b63c9ad30a6f43f50987e5ca4ad201bca
