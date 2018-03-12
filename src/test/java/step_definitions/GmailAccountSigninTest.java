@@ -8,31 +8,33 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import helper_classes.SetDriver;
-//import helper_classes.TestHooks;
 import page_objects.GooglePage;
 
-public class GmailAccountSigninTest {//extends GooglePage{ // Needed for Page Object Model
+public class GmailAccountSigninTest extends GooglePage{ // Needed for Page Object Model
 	private static WebDriver driver;
 	//	private WebDriverWait wait;
-	//	private static Logger log = Logger.getLogger(GmailAccountLoginTest.class);
 
 	public GmailAccountSigninTest() {
-//		super(driver);   // Needed for Page Object Model
+		super(driver);   // Needed for Page Object Model
 		driver = SetDriver.webDriver;
-//		new GooglePage(driver);
+		//		new GooglePage(driver);
 		//		wait = new WebDriverWait(driver, 20);
 	}
+
 
 
 	@When("^I clicked on the Sign in button on the upper-right corner$")
 	public void i_clicked_on_the_Sign_in_button_on_the_upper_right_corner() throws Throwable {
 		try {
-//			ExtentReporter.reportStep(driver, "Sign in button is  displayed", "PASS", 1);
 			driver.findElement(GooglePage.SIGNINID).click();
+			System.out.println("Clicked on the Sign in button.....");
 			Thread.sleep(5000);
 		} catch (Exception e) {
-//			ExtentReporter.reportStep(driver, "Sign in button is not displayed", "FAIL", 1);
 			e.printStackTrace();
+		}
+
+		for(String winHandle : driver.getWindowHandles()){
+			driver.switchTo().window(winHandle);
 		}
 
 	}
@@ -41,24 +43,24 @@ public class GmailAccountSigninTest {//extends GooglePage{ // Needed for Page Ob
 	@When("^I provided my gmail username and password$")
 	public void i_provided_my_gmail_username_and_password() throws Throwable {
 
+		driver.findElement(GooglePage.USERID).sendKeys("gmaitest07@gmail.com");
+		System.out.println("GooglePage.USERID  worked");
+		Thread.sleep(2000);
+		driver.findElement(GooglePage.IDNEXT).click();
+		Thread.sleep(2000);
 
+		driver.findElement(GooglePage.PWDTEXT).sendKeys("icterguru");
+		Thread.sleep(2000);
+		driver.findElement(GooglePage.PASSWORDNEXT).click();
+		Thread.sleep(12000);
 	}
 
 	@Then("^I signed into my Gmail account successfully$")
 	public void i_signed_into_my_Gmail_account_successfully() throws Throwable {
 
-
-	}
-
-
-
-	@Given("^I launch the Google home page url$")
-	public void i_launch_the_Google_home_page_url() throws Throwable {
-		System.out.println("Launching the Google home page . . . .  . . . ");
-//				BaseClass.launchWebApp();
-		driver.get("https://www.google.com");
 		Assert.assertEquals(true, driver.getPageSource().contains("Google"));
 		Thread.sleep(2000);
+
 	}
 
 	@When("^I saw the Google home page$")
@@ -73,14 +75,14 @@ public class GmailAccountSigninTest {//extends GooglePage{ // Needed for Page Ob
 		Assert.assertEquals(true, driver.getPageSource().contains("Google"));
 	}
 
-	
+
 	@When("^I clicked on the Sign in button$")
 	public void i_clicked_on_the_Sign_in_button() throws Throwable {
 		driver.findElement(By.id("gb_70")).click();
 		System.out.println("I clicked on the Sign in button ..............");
 		Thread.sleep(1000);
 	}
-	 
+
 	@Then("^I saw Gmail Sign in page$")
 	public void i_saw_Gmail_Sign_in_page() throws Throwable {
 		Assert.assertEquals(true, driver.getPageSource().contains("Google"));

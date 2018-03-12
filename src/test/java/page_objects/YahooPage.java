@@ -3,11 +3,10 @@ package page_objects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class GooglePage { 
-
+public class YahooPage { 
 
 	private static WebDriver driver;
-
+	
 	public static By SIGNINID =  By.id("gb_70");
 	
 	public static By USERID = By.id("identifierId");
@@ -19,29 +18,18 @@ public class GooglePage {
 
 	public static By SIGNIN_LINK = By.cssSelector(".gmail-nav__nav-link.gmail-nav__nav-link__sign-in");
 
-	public static By Privacy_Link = By.linkText("Privacy");
-	public static By Terms_Link= By.linkText("Terms");
-	
-	
-
 
 	public static boolean isDisplayed(WebDriver driver, By xPath){
 		return driver.findElement(xPath).isDisplayed();
 	}
 
 
-	public GooglePage(WebDriver driver) {
-		System.out.println("GooglePage constructor initiated....");
-		//		super(driver);
-		//		this.driver = driver;
+	public YahooPage(WebDriver driver) {
+		System.out.println("YahooPage constructor initiated....");
+		
 	}
 
-	/*
-	public GooglePage gotIt() {
-//		driver.findElement(GOT_IT).click();
-		return new GooglePage(driver);
-	}
-	 */
+
 
 
 	public void loginAs(String username, String password) throws Exception {
