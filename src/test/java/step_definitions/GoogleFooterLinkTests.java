@@ -7,20 +7,23 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import helper_classes.SetDriver;
+import page_objects.GooglePage;
 
-public class GoogleFooterLinkTests{
+public class GoogleFooterLinkTests extends GooglePage{
 
 	private static WebDriver driver;
 
 	public GoogleFooterLinkTests() {
+		super(driver);
 		driver = SetDriver.webDriver;
-//		System.out.println("This is the Nazrul07....");
+
+		System.out.println("This is the GoogleFooterLinkTests constructor....");
 	}
 
 
 	@When("^I click on the Privacy link$")
 	public void i_click_on_the_Privacy_link() throws Throwable {
-		driver.findElement(By.linkText("Privacy")).click();
+		driver.findElement(GooglePage.Privacy_Link).click();
 		Thread.sleep(2000);   // temporary wait
 	}
 
@@ -32,7 +35,8 @@ public class GoogleFooterLinkTests{
 
 	@When("^I click on the Terms link$")
 	public void i_click_on_the_Terms_link() throws Throwable {
-		driver.findElement(By.linkText("Terms")).click();
+		driver.findElement(GooglePage.Terms_Link).click();
+		
 		Thread.sleep(2000);   // temporary wait
 	}
 

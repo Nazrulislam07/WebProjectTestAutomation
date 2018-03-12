@@ -4,10 +4,20 @@ As a Google Lover,
 I want to learn about the legal policies and terms of service of Google and Gmail.
 
 Background:
+<<<<<<< HEAD
  Given I launch the Google home page url
  And I scroll down to the end of the page
+=======
+    Given I launch the Google home page
+    And I scroll down to the end of the page
+@wip
+Scenario: Privacy Link test
+	When I click on the Privacy link
+	Then I see the Privacy page
+>>>>>>> d6b9746b63c9ad30a6f43f50987e5ca4ad201bca
  
 Scenario Outline: Selecting different footer links and checking the corresponding page
+<<<<<<< HEAD
 When I select "<footerLink_text>" link in the Google footer
 Then I verified the selected Google page by the existence of the "<linkedPage_text>" text
  
@@ -56,4 +66,16 @@ Examples:
 |How Google Wallet uses credit card numbers|Google uses the credit card and debit card numbers|
 |How Google Voice works|Google Voice stores, processes and maintains your call history|
 |Google Product Privacy Guide|Welcome! The articles in this guide will give you more information|
+=======
+    When I select "<footerLink_text>" link in the Google footer
+    Then I verified the selected Google page by the existence of the "<linkedPage_text>" text
+
+    Examples:
+      	|footerLink_text|linkedPage_text|
+		|Privacy|Welcome to the Google Privacy Policy|
+		|Terms|Google Terms of Service|
+
+#		|Privacy|Welcome to the Google Privacy Policy|
+#		|Terms|Google Terms of Service|
+>>>>>>> d6b9746b63c9ad30a6f43f50987e5ca4ad201bca
 
