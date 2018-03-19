@@ -1,34 +1,33 @@
 package step_definitions;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import helper_classes.SetDriver;
 import page_objects.GooglePage;
 
 
 public class GitHubRepoTest {
+	private static WebDriver driver;
 	
 /*	For no main()
  * 
- * private static WebDriver driver;
+ * private static WebDriver driver;*/
+	
 	public GitHubRepoTest() {
-		driver = SetDriver.driver;
-//		new GooglePage(driver);
+		//super(driver);   // Needed for Page Object Model
+		driver = SetDriver.webDriver;
 	}
-*/	
-	public static void main(String[] args) throws Exception {
+
 		
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://www.github.com");
 		
-		Assert.assertEquals(driver.getPageSource().contains("GitHub"), true);
-		
-		driver.findElement(By.linkText("Sign in")).click();
+		/*driver.findElement(By.linkText("Sign in")).click();
 				
 		driver.findElement(By.id("login_field")).sendKeys("ictergurutest@gmail.com");
 		
@@ -53,9 +52,32 @@ public class GitHubRepoTest {
 		
 		
 		
-		driver.close();
+		driver.close();*/
 		
 	
+	
+	@Given("^I launch the GitHub home page url$")
+	public void i_launch_the_GitHub_home_page_url() throws Throwable {
+		driver.get("https://www.github.com");
 	}
+
+	@When("^I login to my github account with \"(.*?)\" and \"(.*?)\" as my username and password$")
+	public void i_login_to_my_github_account_with_and_as_my_username_and_password(String arg1, String arg2) throws Throwable {
+	}
+
+	@When("^I goto my friends' github accounts using their \"(.*?)\"$")
+	public void i_goto_my_friends_github_accounts_using_their(String arg1) throws Throwable {
+		
+	}
+
+	@Then("^I select the available repositories$")
+	public void i_select_the_available_repositories() throws Throwable {
+	}
+
+	@Then("^I verify the existance of the \"(.*?)\" in the github account$")
+	public void i_verify_the_existance_of_the_in_the_github_account(String arg1) throws Throwable {
+	}
+
+
 
 }
