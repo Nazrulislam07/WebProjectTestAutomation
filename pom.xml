@@ -11,7 +11,7 @@
 </properties>
   
   <dependencies>
-  
+     
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -35,15 +35,22 @@
 			<artifactId>cucumber-junit</artifactId>
 			<version>1.2.0</version>
 		</dependency>
-  
-  
+
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
 		</dependency>
-  
-  
-  </dependencies>
-  
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-crypto 
+			used for org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-crypto</artifactId>
+			<version>3.1.0.RELEASE</version>
+		</dependency>
+
+	</dependencies>
+
 </project>

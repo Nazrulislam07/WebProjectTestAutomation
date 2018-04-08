@@ -18,7 +18,8 @@ public class SetDriver {
 	
 	@Before
 	public void getBrowser(Scenario scenario) throws Exception {
-		System.out.println("Before test in SZM_Branch1....");
+
+		System.out.println("before test....");
 		
 /*		browser = GlobalSettings.getInstance().getProperty("BROWSER");
 		System.out.println("Selected browser is: " + browser);
@@ -30,7 +31,7 @@ public class SetDriver {
 	
 	@After
 	public void afterTest(Scenario scenario) {
-		System.out.println("After test....");
+		System.out.println("After Test........");
 		try {
 			webDriver.quit();
 		} catch (Exception ex) {

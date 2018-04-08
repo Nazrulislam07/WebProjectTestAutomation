@@ -1,4 +1,4 @@
-@GitHubRepoTest @regression
+@GitHubRepoTest
 Feature: GitHub Repo Test
 As a GitHub Lover,
 I want to check my friends' GitHub repositories.
