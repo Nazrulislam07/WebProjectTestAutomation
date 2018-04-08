@@ -4,15 +4,9 @@ As a Google Lover,
 I want to learn about the legal policies and terms of service of Google and Gmail.
 
 Background:
-<<<<<<< HEAD
-    Given I launch the Google home page url 
-#    And I scroll down to the end of the page
-
-=======
     Given I launch the Google home page
     And I scroll down to the end of the page
-@wip
->>>>>>> d6b9746b63c9ad30a6f43f50987e5ca4ad201bca
+
 Scenario: Privacy Link test
 	When I click on the Privacy link URL
 	Then I see the Privacy page
