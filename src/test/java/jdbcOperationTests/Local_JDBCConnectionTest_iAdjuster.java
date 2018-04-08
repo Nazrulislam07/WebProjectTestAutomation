@@ -52,6 +52,7 @@ public class Local_JDBCConnectionTest_iAdjuster {
 				System.out.println("  " + claim_no + "\t\t  " +claim_type);
 
 			}
+			
 		} catch (SQLException ex) {
 			ex.printStackTrace();
 		}

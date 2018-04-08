@@ -44,7 +44,8 @@ public class SeleniumDataBaseConnectionTest {
     @Test
     public void getEmployeesFromDataBase() {
         try {
-            String query = "select * from employee";
+            
+        	String query = "select * from employee";
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
 
