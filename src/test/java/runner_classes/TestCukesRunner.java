@@ -20,7 +20,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		glue={"helper_classes", "runner_classes", "step_definitions"},  // These must be glued
 		tags = {"~@wip", "@regression"},
 		monochrome = true,
-		plugin = {"pretty", "html:target/cucumber-html_report", "junit:target/cucumber-junit-results.xml"}
+		plugin = {"pretty", "html:target/cucumber-html_report.html", "junit:target/cucumber-junit-results.xml"}
 
 		)
 
