@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import helper_classes.SetDriver;
+import helper_classes.Hooks;
 import page_objects.GooglePage;
 
 public class GoogleFooterLinkTests extends GooglePage{
@@ -14,7 +14,7 @@ public class GoogleFooterLinkTests extends GooglePage{
 
 	public GoogleFooterLinkTests() {
 		super(driver);
-		driver = SetDriver.webDriver;
+		driver = Hooks.webDriver;
 		System.out.println("This is the GoogleFooterLinkTests constructor....");
 	}
 

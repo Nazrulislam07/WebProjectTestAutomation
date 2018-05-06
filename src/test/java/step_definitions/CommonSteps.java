@@ -5,20 +5,15 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import cucumber.api.java.en.Given;
-import helper_classes.SetDriver;
+import helper_classes.Hooks;
 
 public class CommonSteps {
 //	static Logger log;
 	private static WebDriver driver;
 
 	public CommonSteps() {
-		driver = SetDriver.webDriver;
+		driver = Hooks.webDriver;
 //		new GooglePage(driver);
-	}
-
-	@Given("^I launch the given web app$")
-	public void i_launch_the_XMobile_web_app() throws Exception {
-		
 	}
 
 

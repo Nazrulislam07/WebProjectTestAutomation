@@ -7,15 +7,15 @@ import java.io.InputStream;
 import java.net.InetAddress;
 import java.util.Properties;
 
-public final class GlobalSettings {
+public final class DriverManager {
 
 	private static InputStream propertyFileStream;
 	private static Properties property;
-	private static GlobalSettings setting;
+	private static DriverManager setting;
 	
 	private String currentDirectory; 
 
-	private GlobalSettings() {
+	private DriverManager() {
 		InetAddress localHost;
 		String hostIPAddress;	
 		property = new Properties();
@@ -41,14 +41,14 @@ public final class GlobalSettings {
 		}
 	}
 
-	public static GlobalSettings getInstance() {
+	public static DriverManager getInstance() {
 		if (setting != null)
 		{
 			return setting;
 		}
 		else
 		{
-			return new GlobalSettings();
+			return new DriverManager();
 		}
 	}
 

@@ -7,7 +7,7 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-public class SetDriver {
+public class Hooks {
 	public static WebDriver webDriver;
 	public String browser;
 
