@@ -29,8 +29,8 @@ public final class DriverManager {
 			currentDirectory = System.getProperty("user.dir");
 			System.out.println("Project location: " + currentDirectory);
 			
-			property.load(new FileInputStream(new File("./src/test/resources/properties/WPTA_GlobalSettings.properties")));
-			// ./src/test/resources/properties/WPTA_GlobalSettings.properties
+			property.load(new FileInputStream(new File("./properties/EnvSettings.properties")));
+			// ./properties/EnvSettings.properties
 
 			if (propertyFileStream != null) {
 				property.load(propertyFileStream);

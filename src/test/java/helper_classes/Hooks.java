@@ -18,7 +18,7 @@ public class Hooks {
 	
 	@Before
 	public void getBrowser(Scenario scenario) throws Exception {
-		System.out.println("before test....");
+		System.out.println("Before test....");
 		
 /*		browser = GlobalSettings.getInstance().getProperty("BROWSER");
 		System.out.println("Selected browser is: " + browser);

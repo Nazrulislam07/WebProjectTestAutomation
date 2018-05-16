@@ -22,9 +22,6 @@ public class GooglePage {
 	public static By Privacy_Link = By.linkText("Privacy");
 	public static By Terms_Link= By.linkText("Terms");
 	
-	
-
-
 	public static boolean isDisplayed(WebDriver driver, By xPath){
 		return driver.findElement(xPath).isDisplayed();
 	}
