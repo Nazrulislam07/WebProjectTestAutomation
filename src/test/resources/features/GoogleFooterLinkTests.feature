@@ -42,7 +42,7 @@ Examples:
  	|Changes|Our Privacy Policy may change from time to time|
  	|Specific product practices|The following notices explain specific privacy practices|
  	|Other useful privacy and security related materials|Further useful privacy and security related materials can be found|
- 	|Self Regulatory Frameworks|Self Regulatory Frameworks|
+# 	|Self Regulatory Frameworks|Self Regulatory Frameworks|
  	|Key terms|An affiliate is an entity that belongs|
  	|Partners|How Google uses data when you use our partners|
  	|Updates|We want to be as transparent as possible about the changes|
