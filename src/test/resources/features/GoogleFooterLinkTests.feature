@@ -1,4 +1,5 @@
 @GoogleFooterLinks
+@regression
 Feature: Google Footer links Checkup
 As a Google Lover,
 I want to learn about the legal policies and terms of service of Google and Gmail.
