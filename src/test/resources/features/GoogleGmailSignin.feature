@@ -9,6 +9,7 @@ Background: Launch the Google web application
 
 Scenario: Checking Google's Gmail Sign In activities
     When  I clicked on the Sign in button on the upper-right corner
-	And   I provided my gmail username and password 
+	And   I provided my Gmail username and password 
+	And   I clicked on the Gmail link
     Then  I signed into my Gmail account successfully
 

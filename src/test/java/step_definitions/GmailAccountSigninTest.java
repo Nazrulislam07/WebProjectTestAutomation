@@ -40,16 +40,16 @@ public class GmailAccountSigninTest extends GooglePage{ // Needed for Page Objec
 	}
 
 
-	@When("^I provided my gmail username and password$")
+	@When("^I provided my Gmail username and password$")
 	public void i_provided_my_gmail_username_and_password() throws Throwable {
 
-		driver.findElement(GooglePage.USERID).sendKeys("gmaitest07@gmail.com");
+		driver.findElement(GooglePage.USERID).sendKeys("ictergurutest@gmail.com");
 		System.out.println("GooglePage.USERID  worked");
 		Thread.sleep(2000);
 		driver.findElement(GooglePage.IDNEXT).click();
 		Thread.sleep(2000);
 
-		driver.findElement(GooglePage.PWDTEXT).sendKeys("icterguru");
+		driver.findElement(GooglePage.PWDTEXT).sendKeys("Dh@k@1000");
 		Thread.sleep(2000);
 		driver.findElement(GooglePage.PASSWORDNEXT).click();
 		Thread.sleep(12000);
@@ -110,7 +110,7 @@ public class GmailAccountSigninTest extends GooglePage{ // Needed for Page Objec
 	public void i_clicked_on_the_Gmail_link() throws Throwable {
 		driver.findElement(By.linkText("Gmail")).click();
 		System.out.println("I clicked on the Gmail link ..............");
-		Thread.sleep(10000);
+		Thread.sleep(20000);
 	}
 
 	@Then("^I signed in my Gmail account$")
