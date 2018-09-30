@@ -95,10 +95,10 @@ public class GoogleFooterLinkTests extends GooglePage{
 
 	}
 
-	@When("^I click on the Technologies and Principles tab$")
+	@When("^I click on the Technologies$")
 	public void i_click_on_the_Technologies_and_Principles_tab() throws Throwable {
 
-		driver.findElement(By.linkText("Technologies and Principles")).click();
+		driver.findElement(By.linkText("Technologies")).click();
 		Thread.sleep(2000);   // temporary wait
 
 	}
