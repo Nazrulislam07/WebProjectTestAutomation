@@ -7,15 +7,15 @@ import java.io.InputStream;
 import java.net.InetAddress;
 import java.util.Properties;
 
-public final class GlobalSettings {
+public final class DriverManager {
 
 	private static InputStream propertyFileStream;
 	private static Properties property;
-	private static GlobalSettings setting;
+	private static DriverManager setting;
 	
 	private String currentDirectory; 
 
-	private GlobalSettings() {
+	private DriverManager() {
 		InetAddress localHost;
 		String hostIPAddress;	
 		property = new Properties();
@@ -29,8 +29,8 @@ public final class GlobalSettings {
 			currentDirectory = System.getProperty("user.dir");
 			System.out.println("Project location: " + currentDirectory);
 			
-			property.load(new FileInputStream(new File("./src/test/resources/properties/WPTA_GlobalSettings.properties")));
-			// ./src/test/resources/properties/WPTA_GlobalSettings.properties
+			property.load(new FileInputStream(new File("./properties/EnvSettings.properties")));
+			// ./properties/EnvSettings.properties
 
 			if (propertyFileStream != null) {
 				property.load(propertyFileStream);
@@ -41,14 +41,14 @@ public final class GlobalSettings {
 		}
 	}
 
-	public static GlobalSettings getInstance() {
+	public static DriverManager getInstance() {
 		if (setting != null)
 		{
 			return setting;
 		}
 		else
 		{
-			return new GlobalSettings();
+			return new DriverManager();
 		}
 	}
 

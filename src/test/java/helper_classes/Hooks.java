@@ -7,7 +7,7 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-public class SetDriver {
+public class Hooks {
 	public static WebDriver webDriver;
 	public String browser;
 
@@ -18,7 +18,7 @@ public class SetDriver {
 	
 	@Before
 	public void getBrowser(Scenario scenario) throws Exception {
-		System.out.println("before test....");
+		System.out.println("Before test....");
 		
 /*		browser = GlobalSettings.getInstance().getProperty("BROWSER");
 		System.out.println("Selected browser is: " + browser);
