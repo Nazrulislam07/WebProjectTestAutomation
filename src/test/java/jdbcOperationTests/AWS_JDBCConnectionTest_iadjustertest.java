@@ -20,9 +20,9 @@ public class AWS_JDBCConnectionTest_iadjustertest {
 
 	@BeforeClass
 	public static void setUp() {
-		String dbURL = "jdbc:mysql://iadjustertest.can6aqqzvhtp.us-west-2.rds.amazonaws.com:3306/iadjustertest";
-		String user = "iadjustertest";
-		String password = "iadjustertest";
+		String dbURL = "jdbc:mysql://iadjustertest.8090can6aqqzvhtp.us-west-2.rds.amazonaws.com:3306/iadjustertest";
+		String user = "iadjuster";
+		String password = "iadjuster";
 		connection = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");

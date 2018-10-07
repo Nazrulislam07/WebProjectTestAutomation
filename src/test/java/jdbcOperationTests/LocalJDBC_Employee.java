@@ -26,6 +26,7 @@ public class LocalJDBC_Employee {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			System.out.println("Connecting to Database...");
+			
 			connection = DriverManager.getConnection(dbURL, user, password);
 			if (connection != null) {
 				System.out.println("Connected to the Database...");
@@ -78,7 +79,7 @@ public class LocalJDBC_Employee {
 		}
 	}
 
-
+/*
 	@Test
 	public void getEmployeeNameFromDataBase() {
 		try {
@@ -111,7 +112,7 @@ public class LocalJDBC_Employee {
 			ex.printStackTrace();
 		}
 	}
-
+*/
 	@AfterClass
 	public static void tearDown() {
 		if (connection != null) {

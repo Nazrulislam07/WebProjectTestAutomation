@@ -53,7 +53,7 @@ public class SeleniumDataBaseConnectionTest {
                 int EmpId= rs.getInt("id");
                 String EmpfName= rs.getString("first_name");
                 String EmplName= rs.getString("last_name");
-                int EmpSal= rs.getInt(5);
+                int EmpSal= rs.getInt(4);
 
 //                String EmpAddress=rs.getString(3);
 //                String EmpDept=rs.getString("EmpDept");

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="runner_classes.TestCukesRunner">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="run_cukes"/>
+          <include name="initializeSuite"/>
+        </methods>
+      </class> <!-- runner_classes.TestCukesRunner -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
