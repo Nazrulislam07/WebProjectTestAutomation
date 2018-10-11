@@ -7,6 +7,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>WebProjectTestAutomation</name>
 	<description>WebProjectTestAutomation</description>
+<properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
+
+  
 
 	<dependencies>
 
@@ -54,9 +60,7 @@
 			<artifactId>spring-security-crypto</artifactId>
 			<version>3.1.0.RELEASE</version>
 		</dependency>
-
-
-
+	
 		<!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
 		<dependency>
 			<groupId>commons-httpclient</groupId>

@@ -1,0 +1,331 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 11 03:03:19 EDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (280 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner_classes.TestCukesRunner.run_cukes()'><b>run_cukes</b><br>Test class: runner_classes.TestCukesRunner<br>Test method: Runs Cucumber Features</td>
+<td><div><pre>cucumber.runtime.CucumberException: Error parsing feature file features/GitHubRepoTest.feature
+	at cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:133)
+	at cucumber.runtime.model.CucumberFeature.loadFromFeaturePath(CucumberFeature.java:102)
+	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:54)
+	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:34)
+	at cucumber.runtime.RuntimeOptions.cucumberFeatures(RuntimeOptions.java:201)
+	at cucumber.runtime.Runtime.run(Runtime.java:109)
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:43)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.run_cukes(AbstractTestNGCucumberTests.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:200)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.run(AbstractTestNGCucumberTests.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: gherkin.lexer.LexingError: Lexing error on line 12: &apos;`	Then I select the available repositories
+    Then I verify the existance of the &quot;&lt;expected_repository&gt;&quot; in the github account 
+
+    Examples:
+    |github_usernames|expected_repository|
+		|icterguru|WebAutomation1001|
+		|icterguru|WebAutomation1004|
+		|icterguru|WebAutomation1005|
+		
+
+		
+#Feature: Google Footer Link Test
+#As a Google tester I want to test Google Footer Links
+#Given I go to Google Home page
+#
+#Scenario: Privacy Link test
+#When I click on the Privacy link
+#Then I see the Privacy page
+# 
+#Scenario: Terms Link test
+#When I click on the Terms link
+#Then I see the Terms page
+# 
+#Scenario: Settings Link test
+#When I click on the Settings link
+#Then I see the Settings page
+#
+
+
+#Author: your.email@your.domain.com
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and &lt;placeholder&gt;
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+#&quot;&quot;&quot; (Doc Strings)
+#| (Data Tables)
+#@ (Tags/Labels):To group Scenarios
+#&lt;&gt; (placeholder)
+#&quot;&quot;
+## (Comments)
+#Sample Feature Definition Template
+
+ 
+ #
+  #
+#
+#@tag
+#Feature: Title of your feature
+  #I want to use this template for my feature file
+#
+  #@tag1
+  #Scenario: Title of your scenario
+    #Given I want to write a step with precondition
+    #And some other precondition
+    #When I complete action
+    #And some other action
+    #And yet another action
+    #Then I validate the outcomes
+    #And check more outcomes
+#
+  #@tag2
+  #Scenario Outline: Title of your scenario outline
+    #Given I want to write a step with &lt;name&gt;
+    #When I check for the &lt;value&gt; in step
+    #Then I verify the &lt;status&gt; in step
+#
+    #Examples: 
+      #| name  | value | status  |
+      #| name1 |     5 | success |
+      #| name2 |     7 | Fail    |
+      
+%_FEATURE_END_%&apos;. See http://wiki.github.com/cucumber/gherkin/lexingerror for more information.
+	at gherkin.lexer.En.scan(En.java:872)
+	at gherkin.lexer.I18nLexer.scan(I18nLexer.java:36)
+	at gherkin.parser.Parser.parse(Parser.java:62)
+	at cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:131)
+	... 38 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace180316302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace180316302'><pre>cucumber.runtime.CucumberException: Error parsing feature file features/GitHubRepoTest.feature
+	at cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:133)
+	at cucumber.runtime.model.CucumberFeature.loadFromFeaturePath(CucumberFeature.java:102)
+	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:54)
+	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:34)
+	at cucumber.runtime.RuntimeOptions.cucumberFeatures(RuntimeOptions.java:201)
+	at cucumber.runtime.Runtime.run(Runtime.java:109)
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:43)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.run_cukes(AbstractTestNGCucumberTests.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:200)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.run(AbstractTestNGCucumberTests.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: gherkin.lexer.LexingError: Lexing error on line 12: &apos;`	Then I select the available repositories
+    Then I verify the existance of the &quot;&lt;expected_repository&gt;&quot; in the github account 
+
+    Examples:
+    |github_usernames|expected_repository|
+		|icterguru|WebAutomation1001|
+		|icterguru|WebAutomation1004|
+		|icterguru|WebAutomation1005|
+		
+
+		
+#Feature: Google Footer Link Test
+#As a Google tester I want to test Google Footer Links
+#Given I go to Google Home page
+#
+#Scenario: Privacy Link test
+#When I click on the Privacy link
+#Then I see the Privacy page
+# 
+#Scenario: Terms Link test
+#When I click on the Terms link
+#Then I see the Terms page
+# 
+#Scenario: Settings Link test
+#When I click on the Settings link
+#Then I see the Settings page
+#
+
+
+#Author: your.email@your.domain.com
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and &lt;placeholder&gt;
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+#&quot;&quot;&quot; (Doc Strings)
+#| (Data Tables)
+#@ (Tags/Labels):To group Scenarios
+#&lt;&gt; (placeholder)
+#&quot;&quot;
+## (Comments)
+#Sample Feature Definition Template
+
+ 
+ #
+  #
+#
+#@tag
+#Feature: Title of your feature
+  #I want to use this template for my feature file
+#
+  #@tag1
+  #Scenario: Title of your scenario
+    #Given I want to write a step with precondition
+    #And some other precondition
+    #When I complete action
+    #And some other action
+    #And yet another action
+    #Then I validate the outcomes
+    #And check more outcomes
+#
+  #@tag2
+  #Scenario Outline: Title of your scenario outline
+    #Given I want to write a step with &lt;name&gt;
+    #When I check for the &lt;value&gt; in step
+    #Then I verify the &lt;status&gt; in step
+#
+    #Examples: 
+      #| name  | value | status  |
+      #| name1 |     5 | success |
+      #| name2 |     7 | Fail    |
+      
+%_FEATURE_END_%&apos;. See http://wiki.github.com/cucumber/gherkin/lexingerror for more information.
+	at gherkin.lexer.En.scan(En.java:872)
+	at gherkin.lexer.I18nLexer.scan(I18nLexer.java:36)
+	at gherkin.parser.Parser.parse(Parser.java:62)
+	at cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:131)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>runner_classes.TestCukesRunner@11bd0f3b</td></tr>
+</table><p>
+</body>
+</html>
